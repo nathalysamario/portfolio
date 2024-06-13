@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
+
+    <style>
+        body{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .container{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        }
+
+        #header{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            color: rgba(7, 15, 24, 1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #menu{
+            text-align: right;
+        }
+
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px    
+
+        }
+
+        #menu li{
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 49px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: rgba(7, 15, 24, 1);
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #nome{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 700px;
+            font-size: 50px;
+            line-height: 82px;
+        }
+
+        #paragrafoNome{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 40px;
+        }
+
+        #linktext{
+            background-color: rgba(31, 124, 255, 1);
+            border-radius: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            color: white;
+            padding: 10px 25px 10px 25px;
+            text-decoration: none;
+
+        }
+
+        #maria{
+            width: 100%;
+            height: 400px;
+            top: 182px;
+            left: 777px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+
+        .logo{
+            text-align: center;
+        }
+
+        #Clientes{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #headerClientText{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: auto;
+            margin-top: -2px;
+        }
+
+        h2.red{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            color: rgba(247, 92, 78, 1);
+        }
+
+        h1.black{
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            text-align: center;
+            color: rgba(0, 0, 0, 1);
+            margin-top: 0px;
+
+        }
+
+        #services{
+            text-align: center;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 32px;
+        }
+
+        .TextCenter{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h3{
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            color: rgba(7, 15, 24, 1);
+        }
+
+        .texto{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: rgba(87, 84, 85, 1);
+
+        }
+
+        #mulheres{
+            margin-top: 100px;
+        }
+        
+        #Propaganda{
+            margin-top: 150px;
+        }
+
+        #textoEmail{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            color: rgba(87, 84, 85, 1);
+            margin-left: 50px;
+
+        }
+
+        #EmailInput{
+            background-color: rgba(245, 246, 251, 1);
+            border-radius: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight:auto;
+            line-height: 24px;
+            color: white;
+            padding: 10px 25px 10px 25px;
+            border: none;
+            margin-left: 70px;
+            margin-top: 20px;
+            width: 340px;
+        }
+
+        #Botao{
+            background-color: rgba(31, 124, 255, 1);
+            border-radius: 50px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            color: white;
+            padding: 10px 25px 10px 25px;
+            border: none;
+            margin-left: 70px ;
+            margin-top: 20px;
+            width: 180px;
+            
+        }
+
+        #portfolio{
+            text-align: left;
+
+        }
+
+        #red2{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: rgba(247, 92, 78, 1);
+            margin-top: 100px;
+        }
+
+        #black2{
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            color: rgba(0, 0, 0, 1);
+            margin-top: 0px;
+        }
+
+        #homens{
+            margin-top: 40px;
+            margin-bottom: 100px;
+        }
+
+        
+
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            Portfólio
+
+        </div>
+
+
+
+        
+        <div id="menu">
+            <ul>
+                <li><a href="#services">Meus Serviços</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/nathaly-samario-705567277/">Fale comigo</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="headerText">
+            <h1 id="nome">Olá, meu nome <br>
+                é Maria</h1>
+                <p id="paragrafoNome">Sou programadora e gostaria de apresentar meu <br>
+                    trabalho para você através deste portfólio.</p>
+
+            <a id="linktext" href="">Meus Serviços</a>
+
+
+
+        </div>
+        <div id="headerImagem">
+            <img id="maria" src="./imagens/maria.svg" alt="">
+        </div>
+
+    </div>
+    <div class="container" id="Clientes">
+        <div>
+            <p id="headerClientText">Alguns dos <br>
+               meus clientes
+            
+            </p>
+        </div>
+        
+        <div class="logo"><img src="./imagens/icones/apple.svg" alt=""></div>
+        <div class="logo"><img src="./imagens/icones/slack.svg" alt=""></div>
+        <div class="logo"><img src="./imagens/icones/spotify.svg" alt=""></div>
+
+
+
+
+    </div>
+    <div class="container">
+        <div id="services"> 
+            <h2 class="red">Conheça</h2>
+            <h1 class="black">Meus Serviços</h1>
+            <p>Vou ajudar a sua empresa a <br>
+            alcançar grandes resultados.</p>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="TextCenter">
+            <img src="./imagens/icones/maleta.svg" alt="">
+            <h3>Consultoria</h3>
+            <p class="texto">
+                Te ajudo a organizar sua empresa <br>
+                e melhorar seus resultados.
+            </p>
+        </div>
+        <div class="TextCenter">
+            <img src="./imagens/icones/aviaozinho.svg" alt="">
+            <h3>Email Marketing</h3>
+            <p class="texto">Gerenciar campanhas é difícil. <br>
+                Conte comigo para te ajudar.</p>
+        </div>
+        <div class="TextCenter">
+            <img src="./imagens/icones/web.svg" alt="">
+            <h3>Criação de Sites</h3>
+            <p class="texto">Desenvolvo seu site inteiro <br>
+                do zero e te entrego prontinho.</p>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div>
+            <img id="mulheres" src="./imagens/mulheres.svg" alt="">
+        </div>
+
+        <div id="Propaganda">
+            <h2 class="red">Economize seu tempo</h2>
+            <h1 class="black">Ganhe mais dinheiro</h1>
+            <p id="textoEmail">
+                Digite aqui seu endereço de e-mail. Eu entrarei em <br>
+                contato para fornecer um diagnóstico gratuito.
+            </p>
+            <form action="https://formspree.io/f/xdoqqewj" method="post">
+                <input id="EmailInput" placeholder="E-mail" type="text" required name="Email">
+                <button  type="submit" id="Botao">Enviar</button>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="portfolio">
+            <h2 id="red2">Conheça meu trabalho</h2>
+            <h1 id="black2">Porfolio</h1>
+        </div>
+
+
+    </div>
+    <div class="container" id="homens">
+        <img src="./imagens/portfolio1.svg" alt="">
+        <img src="./imagens/portfolio2.svg" alt="">
+        <img src="./imagens/portfolio3.svg" alt="">
+    </div>
+    
+</body>
+</html>
